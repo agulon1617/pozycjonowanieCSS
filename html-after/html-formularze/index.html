@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze</title>
+</head>
+<body>
+    <form action=""  method="POST">           <!-- znaczniki w formularzu inputy-->
+        <label for="username">Imie</label>  <!-- for ma miec takie samo id co input username -->
+        <input type="text" name="username" id="username"> <br>
+        <input type="email" name="email" placeholder="podaj adres e-mail"> <br> 
+        <input type="number" name="quantity" min="1" max="10" disabled> <br> <!-- 1,2,3 czesto lista rozwijana, min i max mozna dodac atrybutem-->
+        <input type="checkbox" name="agreement"> <br> <!--opcja wyboru, wyrazam zgode na przetwarzanie danych-->
+       
+
+        <label><input type="radio" name="choice">Tak</label><br> <!-- czasami mozna label wlozyc w inputa,klikniecie tekstu aktywowalo pole-->
+        <!-- oblozenie pola -->
+        <input type="radio" name="choice">Tak <br>  <!--wzajemnie sie wykluczaja-->
+        <input type="radio" name="choice">Nie <br>
+        <input type="radio" name="choice">nie wiem <br>
+        
+        <select name="city">
+          <option value="Krakow"> Krakow</option>  <!-- rozwijana lista-->
+          <option value="Warszawa" selected>Warszawa</option> <!-- selected domyslnie wybrane-->
+          <option value="Gdansk">Gdansk</option> 
+        </select><br>     
+
+        <textarea name="message" maxlength="50"></textarea> <br> <!-- tekst komentarza, maxlength ze max 50znakow-->
+
+        <input type="submit" value="Wyslij"> <br> <!-- input przycisk do formularza, value jak sie bedzie nazywal zmiana nazwy-->
+      <!-- atrybuty do znacznikow w formularzu-->
+
+      <iframe width="700" height="394" src="https://www.youtube.com/watch?v=3jt6q65PvPU"></iframe> <!-- osadzenie filmu-->
+       <!-- svg, grafiki, info grafiki -->
+      <svg style="height: 100px;">
+        <path d="20.22, 30,582"></path>
+      </svg>
+      
+      <a href="adres internetowy">opis odsyłacza</a> <!-- link!-->
+
+
+     <img src="img/commerce-and-shoppnieg.svg" alt="cart" style="height:50px">
+    </form>
+
+
+
+
+
+
+</body>
+</html>

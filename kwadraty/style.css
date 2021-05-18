@@ -1,0 +1,10 @@
+h1 {color: azure;
+    background-color: #808080;
+}
+ .square {
+    width: 50%;
+    height: 50px;
+   margin-left :50px; ;
+   margin-right: 50px;
+    background-color: #fea500;
+}

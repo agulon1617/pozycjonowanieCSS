@@ -1,0 +1,120 @@
+/*p – selektor znacznika
+#identyfikator – selektor identyfikatora
+.klasa – selektor klasy
+li > a – selektor bezpośredniego potomka
+li a – selektor potomka
+p + a – selektor bezpośredniego rodzeństwa
+p ~ a – selektor rodzeństwa
+ */
+
+body{
+    background-color: antiquewhite;
+
+}
+section{
+    color: black;
+}
+/* selektor znacznika */
+h1{
+
+    font-weight: 200;
+    background-color: chocolate
+    ;
+color: cornflowerblue;}
+
+/*selektor klasy*/
+.pierwszy{
+    font-weight: 100;
+    background-color: cyan;
+color: darkblue;}
+.drugi{
+    font-weight: 100;
+    background-color: beige
+    ;
+    color: darkslateblue;
+}
+ol{background-color: darksalmon;}
+
+li{
+    background:red;
+}
+/*selektor id*/
+#item1 {
+    color: royalblue;
+}
+#item2 {
+    color: silver;
+}
+#item3 {
+    color: springgreen;
+}
+#item4{
+    color: tomato;
+}
+<!-- zadanie drugie-->
+p {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+/*kaskadowosc*/
+p{color: yellow;
+}
+
+p{
+    color: green};
+}
+/*zlozone selektory*/
+li,
+p,
+footer{
+    margin-bottom: auto;
+}
+section > a {
+    color: yellow;
+} 
+section a{
+    font-size: small;
+}
+h2+ p {
+    line-height: 3 em;
+}
+
+/*selektor uniwersalny*/
+*{ color: yellow;
+    box-sizing: pink;
+}
+/*selektor tylko only*/
+a.link{
+    background-color: violet;
+}
+ /*selektor pseudoelementow*/
+ #main-heading::before{
+     content: "*";
+     color: tomato;
+ }
+
+ #main-heading::after{
+    content: "$";
+    color: tomato;
+}
+
+/*selektor pseudoklas*/
+.link:hover{
+    color: tomato;
+}
+input:focus{background-color: tomato;
+
+}
+
+li:first-child{
+    color: turquoise;
+
+}
+li:last-child{
+    color: whitesmoke;
+}
+li:nth-child(3){
+    color: teal;
+}
+
